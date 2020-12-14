@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    printf("Welcome!\nYou are able to test your skill of writing C code here");
+    int a;
+    scanf("%d",&a);
+    printf("%d\n",a);
     return 0;
 }

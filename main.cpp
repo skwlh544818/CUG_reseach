@@ -1,11 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    int x,y;
-    scanf("%d %d",&x,&y);
-    int p=x*y;
-    int s=x+y;
-    int total=s*s+p*(s-x)*(p+y);
-    printf("%d\n",total);
+    int x,y,z;
+    scanf("%d %d %d",&x,&y,&z);
+    printf("%d\n",x+y+z);
     return 0;
 }

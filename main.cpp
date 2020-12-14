@@ -1,12 +1,26 @@
 #include <stdio.h>
 int main()
 {
-    double a,b,c;
-    scanf("%lf %lf %lf",&a,&b,&c);
-    double avg=(a+b+c)/3;
-    if (avg>=90)printf("A\n");
-    else if(avg>=70 &&avg<90) printf("B\n");
-    else if (avg>=50 && avg<70)printf("C\n");
-    else if (avg<50)printf("F\n");
+    int n,a,b[1000]={0};
+    scanf("%d",&n);
+    if(n%2==0)
+    {
+        printf("-1");
+    }
+    else{
+        for(int i=0;i<n;++i)
+        {
+            scanf("%d",&a);
+            b[a]++;
+        }
+        for(int i=0;i<1000;++i)
+        {
+            if (b[i]%2==1)
+            {
+                printf("%d\n",i);
+                break;
+            }
+        }
+    }
     return 0;
 }
